@@ -18,10 +18,10 @@ const handleMenuClick = () => {
         <div class="text-3xl font-bold">ud</div>
     </div>
     <div class="hidden md:flex text-white gap-8 items-center">
-        <a class="" href="#services">Services</a>
-        <a class="" href="#blog">Blog</a>
-        <a class="" href="#about">About</a>
-        <a class="bg-primary px-4 p-2 text-black font-semibold" href="#contact">Contact</a>
+        <a class="hover:text-primary" href="#services">Services</a>
+        <a class="hover:text-primary" href="#blog">Blog</a>
+        <a class="hover:text-primary" href="#about">About</a>
+        <a class="bg-primary px-4 p-2 text-black font-semibold hover:bg-white hover:text-primary" href="#contact">Contact</a>
     </div>
     <div class="md:hidden flex items-center">
         <button class="text-white" id="menu" on:click|preventDefault={handleMenuClick}>
