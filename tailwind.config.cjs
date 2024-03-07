@@ -5,10 +5,11 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Space Grotesk', 'sans-serif']
+				sans: ['Space Grotesk', 'sans-serif'],
+				serif: ['Noto Serif', 'serif']
 			},
 			colors: {
-				'primary': '#F88D75',
+				'primary': '#FFD700',
 				'white': '#FFFDED',
 				'black': '#010206',
 			}
