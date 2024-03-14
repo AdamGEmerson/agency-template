@@ -23,13 +23,12 @@
 
         <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
             <stop offset="20%" style="stop-color:rgb(128,0,128); stop-opacity:1" />
-            <stop offset="60%" style="stop-color:rgb(128,0,128); stop-opacity:0" />
+            <stop offset="40%" style="stop-color:rgb(200,0,200); stop-opacity:0" />
             <stop offset="80%" style="stop-color:rgb(128,0,128); stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(128,0,128); stop-opacity:0" />
-
+            <stop offset="100%" style="stop-color:rgb(10,0,10); stop-opacity:0" />
         </radialGradient>
     </defs>
-    <rect width="70%" height="70%" x="0" y="0" fill="url(#gradient)"/>
+    <rect width="100%" height="100%" x="0" y="0" fill="url(#gradient)"/>
 </svg>`;
       const absoluteMap = `
 <svg xmlns="http://www.w3.org/2000/svg" class="displacementmap" id="absolute-displacementmap" width="256" height="256" preserveAspectRatio="none">
@@ -72,7 +71,7 @@
       const xMax = 2710;
       const yMin = 0;
       const yMax = 1800;
-      const magOffset = -150;
+      const magOffset = -300;
       let isMoving = false;
       let speed = 30;
       let delta = 0;
