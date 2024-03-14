@@ -20,7 +20,7 @@
     <div class="fixed top-60 left-20">
         Scroll: {percentScroll}%
     </div>
-    <div class="absolute bottom-10 flex justify-center left-0 right-0 z-50 bg-white">
+    <div class="absolute bottom-10 flex justify-center left-0 right-0 z-50">
         Hello World - End of Page
     </div>
 </div>

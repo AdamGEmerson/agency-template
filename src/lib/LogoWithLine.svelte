@@ -16,12 +16,12 @@
 
 <a class="w-40 flex justify-around fixed" href="/">
     <div>
-        <Logo class="text-green-950 w-full h-full translate-x-[10%]" />
-        <div class="flex self-start w-[116%] absolute top-[55%]">
-            <div class="h-1 bg-red-500"
+        <Logo class="text-white w-full h-full translate-x-[9%]" />
+        <div class="flex self-start w-[116%] absolute top-[54%]">
+            <div class="h-1 bg-primary rounded"
                  style="width: {percentScroll}%" />
         </div>
     </div>
 </a>
 
-<svelte:window bind:scrollY={y} bind:innerHeight={innerHeight} />
+<svelte:window bind:scrollY={y} bind:innerHeight />

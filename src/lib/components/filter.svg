@@ -1,0 +1,33 @@
+<svg id="mars_svg" width="100%" height="100%" viewBox="0 0 3000 1800" preserveaspectRatio="xMidYMid meet">
+    <defs>
+        <filter id="dm-filter" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+            <feImage id="absmap" x="0" y="-600" width="3000" height="3000" result="FEIMG_ABS" />
+            <feImage id="magnifyer" x="50%" y="50%" width="700" height="700" result="FEIMG_MAGNIFYER" />
+
+            <feMerge result="MERGE_ALL">
+                <feMergeNode in="FEIMG_ABS" />
+                <feMergeNode in="FEIMG_MAGNIFYER" />
+            </feMerge>
+
+            <feDisplacementMap in="SourceGraphic" in2="MERGE_ALL" scale="-1700" xChannelSelector="R" yChannelSelector="B" />
+        </filter>
+    </defs>
+    <g id="filtered">
+        <g id="wrapper">
+            <foreignObject width="6000" height="1800" id="filteredd">
+                >
+                <picture>
+                    <source media="(min-width: 1600px)" srcset="https://assets.codepen.io/100347/fedm_mars-w3000.webp 3000w,
+                https://assets.codepen.io/100347/fedm_mars-w6000.webp 6000w" type="image/webp" />
+                    <source media="(min-width: 680px)" srcset="https://assets.codepen.io/100347/fedm_mars-w2040.webp 2040w,    https://assets.codepen.io/100347/fedm_mars-w6000.webp 6000w" type="image/webp" />
+                    <source srcset="https://assets.codepen.io/100347/fedm_mars-w1360.webp 1360w,https://assets.codepen.io/100347/fedm_mars-w2040.webp 2040w" type="image/webp" />
+                    <source media="(min-width: 1600px)" srcset="https://assets.codepen.io/100347/fedm_mars-w3000.jpg 3000w,
+                https://assets.codepen.io/100347/fedm_mars-w6000.jpg 6000w" type="image/jpg" />
+                    <source media="(min-width: 680px)" srcset="https://assets.codepen.io/100347/fedm_mars-w2040.jpg 2040w, https://assets.codepen.io/100347/fedm_mars-w6000.jpg 6000w" type="image/jpg" />
+                    <source srcset="https://assets.codepen.io/100347/fedm_mars-w1360.jpg 1360w,https://assets.codepen.io/100347/fedm_mars-w2040.jpg 2040w" type="image/jpg" />
+                    <img class="mars-img" id="filteredimage" src="https://assets.codepen.io/100347/fedm_mars-w1360.jpg" height="1800" width="6000" />
+                </picture>
+            </foreignObject>
+        </g>
+    </g>
+</svg>

@@ -27,15 +27,15 @@ onMount(() => {
 </script>
 
 {#if mounted}
-    <div in:fly={{y: -10, duration:500, delay: 100}} out:fly={{y: -10, duration: 500}} class="flex flex-row justify-between fixed top-0 right-0 left-0 p-8 px-4 md:px-16 w-full text-stone-900 bg-amber-50">
+    <div in:fly={{y: -10, duration:500, delay: 100}} out:fly={{y: -10, duration: 500}} class="flex flex-row justify-between fixed top-0 right-0 left-0 p-8 px-4 md:px-16 w-full text-black z-20">
         <div>
             <LogoWithLine />
         </div>
-        <ul class="hidden md:flex text-black gap-8 items-center">
+        <ul class="hidden md:flex text-white gap-8 items-center text-xs">
             {#each links as link, i}
                 <li in:fly|global={{y: -10, duration: 500, delay: 500 + 100 * i}}><a class="hover:text-red-500" href={link.href}>{link.name}</a></li>
             {/each}
-                <li in:fly|global={{y: -10, duration: 500, delay: 500 + 100 * links.length}}><a class="bg-green-950 px-4 p-2 text-white font-semibold hover:bg-red-500" href="#contact">Contact</a></li>
+                <li in:fly|global={{y: -10, duration: 500, delay: 500 + 100 * links.length}}><a class="bg-white px-4 p-2 text-black font-semibold hover:bg-primary" href="#contact">Contact</a></li>
         </ul>
         <div class="md:hidden flex items-center">
             <button class="text-black" id="menu" on:click|preventDefault={handleMenuClick}>

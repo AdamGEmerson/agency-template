@@ -10,7 +10,7 @@
     <meta name="description" content="At Odd Break Digital, we craft websites that stand out, spark conversation, and drive results. We're a passionate bunch of digital strategists and designers who believe in the power of creativity and collaboration to break through the ordinary and build websites that are anything but boring." />
 </svelte:head>
 
-<div class="bg-amber-50 px-16 py-8 min-h-[100vh] h-full relative overflow-x-hidden">
+<div class="px-16 py-8 min-h-[100vh] h-full relative overflow-x-hidden">
     <NavBar />
     <slot />
 </div>

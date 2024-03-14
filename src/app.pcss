@@ -4,45 +4,81 @@
 @tailwind utilities;
 
 /* Import all weights of Space Grotesk */
-
 @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 300;
-  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf') format('truetype');
+  src: url('fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+  src: url('fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf') format('truetype');
+  src: url('fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.ttf') format('truetype');
+  src: url('fonts/SpaceGrotesk/SpaceGrotesk-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+  src: url('fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Noto Serif';
   font-style: normal;
-  src: url('/fonts/NotoSerif/NotoSerif-VariableFont_wdth,wght.tff') format('truetype');
+  src: url('fonts/NotoSerif/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+
+/*
+Font: 		Ingram Mono
+Style: 		Regular
+URL: 		https://youworkforthem.com/font/T11571/ingram-mono
+Foundry: 	Typeface Design Studio
+Foundry: 	https://youworkforthem.com/designer/1740/typeface-design-studio
+Copyright:	Copyright (c) 2019 by Minor Praxis. All rights reserved.
+Version: 	17
+Created:	October 16, 2023
+License: 	https://www.youworkforthem.com/font-license
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted
+			from using the WebFonts(s) listed without a purchased license.
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+  font-family: 'IngramMono-Regular';
+  src: url('fonts/Ingram/ingram-mono-regular.eot');
+  src: url('fonts/Ingram/ingram-mono-regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Ingram/ingram-mono-regular.woff2') format('woff2'),
+  url('fonts/Ingram/ingram-mono-regular.woff') format('woff'),
+  url('fonts/Ingram/ingram-mono-regular.ttf') format('truetype'),
+  url('fonts/Ingram/ingram-mono-regular.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  @apply bg-black min-h-[100vh];
+  padding: 0;
+  background-image: url('$lib/images/mesh-gradient.png');
+  background-blend-mode: hard-light;
 }
 
