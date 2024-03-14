@@ -4,6 +4,9 @@
   import Checkerboard from "$lib/components/Checkerboard.svelte";
   import pattern from "$lib/components/pattern_checkerboard.png";
   import patternSvg from "$lib/components/checkerboard.svg";
+  import dotsSvg from "$lib/components/dots.svg";
+  import memphis from "$lib/components/memphis.svg";
+
 
   let x = 0;
   let y = 0;
@@ -163,7 +166,7 @@
     <g id="wrapper">
       <foreignObject width="100%" height="100%" id="filteredd">
         <picture>
-          <img class="pattern-img" id="filteredimage" src={patternSvg} />
+          <img class="pattern-img" id="filteredimage" src={memphis} />
         </picture>
       </foreignObject>
     </g>
@@ -219,4 +222,3 @@
 </style>
 
 <svelte:window on:mousemove={onMouseMove} />
-```

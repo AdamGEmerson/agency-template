@@ -1,11 +1,12 @@
 <script lang="ts">
 
 import SVGMap from "$lib/components/SVGMap.svelte";
+import BetterSVGMap from "$lib/components/BetterSVGMap.svelte";
 
 </script>
 
 <div class="container">
-    <SVGMap />
+    <BetterSVGMap />
 </div>
 
 

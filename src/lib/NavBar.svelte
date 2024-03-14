@@ -27,7 +27,11 @@ onMount(() => {
 </script>
 
 {#if mounted}
-    <div in:fly={{y: -10, duration:500, delay: 100}} out:fly={{y: -10, duration: 500}} class="flex flex-row justify-between fixed top-0 right-0 left-0 p-8 px-4 md:px-16 w-full text-black z-20">
+    <div in:fly={{y: -10, duration:500, delay: 100}} out:fly={{y: -10, duration: 500}}
+         id="navbar"
+         class="flex flex-row justify-between fixed top-0 right-0 left-0 p-8 px-4 md:px-16 w-full text-black z-20 {scrollY > 20 ? 'bg-black bg-opacity-50' : 'bg-none'} transition-colors"
+         style="backdrop-filter: blur({scrollY > 20 ? '32px' : '0px'});"
+    >
         <div>
             <LogoWithLine />
         </div>
@@ -59,3 +63,10 @@ onMount(() => {
     </div>
 {/if}
 <svelte:window bind:scrollY />
+
+<style>
+    #navbar {
+
+    }
+</style>
+
